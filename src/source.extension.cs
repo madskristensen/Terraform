@@ -12,7 +12,7 @@ namespace Terraform
         public const string Description = @"Basic language support for Terraform files (.tf and .tfvars) including syntax highlighting, comment/uncomment, brace completion, and more.";
         public const string Language = "en-US";
         public const string Version = "1.0";
-        public const string Author = "madsk";
+        public const string Author = "Mads Kristensen";
         public const string Tags = "terraform";
     }
 }
