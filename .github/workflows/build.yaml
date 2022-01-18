@@ -39,13 +39,13 @@ jobs:
         vsix-token-source-file: ${{ env.VsixManifestSourcePath }}
         
     - name: Build
-      run: msbuild /v:m -restore /p:OutDir=\_built
+      run: msbuild /p:OutDir=\_built
       
-    - name: Setup test
-      uses: darenm/Setup-VSTest@v1
+    #- name: Setup test
+    #  uses: darenm/Setup-VSTest@v1
 
-    - name: Test
-      run: vstest.console.exe \_built\*Tests.dll
+    #- name: Test
+    #  run: vstest.console.exe \_built\*Tests.dll
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
