@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "openstack_blockstorage_volume_v3" "${1:resource}" {
+  name        = "${2:name}"
+  description = "${3:description}"
+  size        = "${4:10}"
+	volume_type = "${5:b1.standard}"
+}</string>
+	<key>name</key>
+	<string>openstack.volume</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>openstack.volume</string>
+	<key>uuid</key>
+	<string>54E5E11B-9816-4B91-ACAD-B4CA7AA71D93</string>
+</dict>
+</plist>

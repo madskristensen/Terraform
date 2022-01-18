@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>data "template_file" "${1:name}" {
+	template = "${2:template}"
+	vars {
+		${3:key} = "${4:value}"
+	}
+}</string>
+	<key>name</key>
+	<string>data.template_file</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>template</string>
+	<key>uuid</key>
+	<string>C6782691-FD04-4B84-A475-50B1413C8A19</string>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "kubernetes_pod" "${1:name}" {
+  metadata {
+    name      = "${2:pod_name}"
+		namespace = "${3:default}"
+  }
+
+  spec {
+    container {
+      image = "${4:image}"
+      name  = "${5:image_name}"
+    }
+  }
+}</string>
+	<key>name</key>
+	<string>kubernetes.pod</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>k8s.pod</string>
+	<key>uuid</key>
+	<string>E889A29C-BEC9-46EF-AA0A-02E69217D3FE</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+﻿[$RootKey$\InstalledProducts\TerraformPackage]
+"Package"="{a51637cd-afa8-4cfc-b369-d1f0a72ea82b}"
+
+[$RootKey$\BindingPaths\{a51637cd-afa8-4cfc-b369-d1f0a72ea82b}]
+"$PackageFolder$"=""
+
+[$RootKey$\TextMate\Repositories]
+"Terraform"="$PackageFolder$"
+
+[$RootKey$\ShellFileAssociations\.tf]
+"DefaultIconMoniker"="e0d5c5ef-6c27-4443-b727-6ccdb61b65ca:0"
+[$RootKey$\ShellFileAssociations\.tfvars]
+"DefaultIconMoniker"="e0d5c5ef-6c27-4443-b727-6ccdb61b65ca:0"
+
+[$RootKey$\TextMate\LanguageConfiguration\GrammarMapping]
+"source.terraform"="$PackageFolder$\language-configuration.json"

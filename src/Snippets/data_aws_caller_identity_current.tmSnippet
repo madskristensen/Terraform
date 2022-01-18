@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>data "aws_caller_identity" "current" {}</string>
+	<key>name</key>
+	<string>data.aws.caller_identity.current</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>data.aws.caller_identity.current</string>
+	<key>uuid</key>
+	<string>4DE8A2A0-05D0-4C12-A6D2-0D5475312CD2</string>
+</dict>
+</plist>

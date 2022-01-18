@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "openstack_compute_secgroup_v2" "${1:title}" {
+  name        = "${2:name}"
+  description = "${3:description}"
+
+  rule {
+    from_port     = ${4:22}
+    to_port       = ${5:22}
+    ip_protocol   = "${6:tcp}"
+    from_group_id = "\${${7:group_id}}"
+    cidr          = "${8:0.0.0.0/0}"
+  }
+}${9}</string>
+	<key>name</key>
+	<string>openstack.secgroup</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>openstack.secgroup</string>
+	<key>uuid</key>
+	<string>FDC2DB75-0A24-4630-9862-4EE47E6AF1E6</string>
+</dict>
+</plist>

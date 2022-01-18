@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "aws_iam_role" "${1:title}" {
+  name = "${2:name}"
+	path = "${3:/}"
+	
+	assume_role_policy = "\${data.aws_iam_policy_document.${4:policy}.json}"
+	description = "${5:description}"
+}$6</string>
+	<key>name</key>
+	<string>aws.iam_role</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>aws.iam_role</string>
+	<key>uuid</key>
+	<string>566490FC-D8D0-49E2-8581-32CDC1622B42</string>
+</dict>
+</plist>

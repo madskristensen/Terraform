@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>provider "kubernetes" {
+  host                   = "${1:host}"
+  
+  client_certificate     = "${2:client_certificate}"
+  client_key             = "${3:client_key}"
+  cluster_ca_certificate = "${4:cluster_ca_certificate}"
+  
+}</string>
+	<key>name</key>
+	<string>kubernetes.provider</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>k8s.provider</string>
+	<key>uuid</key>
+	<string>42E71587-F55A-403D-913E-25284B8DD247</string>
+</dict>
+</plist>

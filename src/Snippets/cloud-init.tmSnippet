@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>data "template_cloudinit_config" "${1:name}" {
+  gzip          = true
+  base64_encode = true
+
+  # Main cloud-config configuration file.
+  part {
+    filename     = "init.cfg"
+    content_type = "text/cloud-config"
+    content      = templatefile("\${path.module}/${2:path}",
+			{
+				${3:key} = ${4:value}
+			}
+		)
+  }
+}</string>
+	<key>name</key>
+	<string>cloud-init</string>
+	<key>tabTrigger</key>
+	<string>cloud-init</string>
+	<key>uuid</key>
+	<string>4B211486-0C4B-4E28-830B-A75947203C83</string>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "openstack_compute_instance_v2" "${1:name}" {
+  name            = "${2:instance_name}"
+  image_id        = "${3:image_id}"
+  flavor_id       = "${4:flavour_id}"
+  key_pair        = "${5:key_pair}"
+  security_groups = [
+		"${6:security_groups}"
+	]
+
+  metadata {
+    ${7:key} = "${8:value}"
+  }
+  network {
+    name = "${9:network_name}"
+  }
+}</string>
+	<key>name</key>
+	<string>openstack.instance</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>openstack.instance</string>
+	<key>uuid</key>
+	<string>75D728FC-76F6-4AC0-AF14-7C94115ECB0D</string>
+</dict>
+</plist>

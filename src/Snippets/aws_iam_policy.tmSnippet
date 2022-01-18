@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "aws_iam_policy" "${1:identifier}" {
+  name        = "${2:name}"
+  path        = "${3:/}"
+  description = "${4:description}"
+
+  policy = "\${data.aws_iam_policy_document.${5:policy_document}.json}"
+}</string>
+	<key>name</key>
+	<string>aws.iam_policy</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>aws.iam_policy</string>
+	<key>uuid</key>
+	<string>76C6035D-B435-41DD-9C37-946A0E1D167C</string>
+</dict>
+</plist>

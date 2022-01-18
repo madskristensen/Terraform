@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "openstack_compute_volume_attach_v2" "${1:title}" {
+  instance_id = "${2:instance_id}"
+  volume_id   = "${3:volume_id}"
+}${4}</string>
+	<key>name</key>
+	<string>openstack.volume_attach</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>openstack.volume_attach</string>
+	<key>uuid</key>
+	<string>A3BC0837-C6CB-4777-B00C-4782BD320D3B</string>
+</dict>
+</plist>

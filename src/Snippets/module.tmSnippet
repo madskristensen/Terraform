@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>module "${1:name}" {
+	source = "${2:source}"
+	
+	${3}
+}</string>
+	<key>name</key>
+	<string>module</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>mod</string>
+	<key>uuid</key>
+	<string>14985944-DBB1-48B8-BBC7-62A30AB45C95</string>
+</dict>
+</plist>

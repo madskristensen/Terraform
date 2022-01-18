@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>resource "openstack_containerinfra_cluster_v1" "${1:name}" {
+  name                 = "${2:name}"
+  cluster_template_id  = "${3:template_id}"
+  master_count         = "${4:master_count}"
+  node_count           = "${5:node_count}"
+  keypair              = "${6:keypair_name}"
+}</string>
+	<key>name</key>
+	<string>openstack.cluster</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>openstack.cluster</string>
+	<key>uuid</key>
+	<string>F0C62891-A4DA-42D5-AA52-D9AC60766D43</string>
+</dict>
+</plist>

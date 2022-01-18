@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>data "external" "${1:title}" {
+  program = ["${2:runtime}", "${3:command}"]
+
+  query = {
+    # arbitrary map from strings to strings, passed
+    # to the external program as the data query.
+    ${4:key} = "${5:value}"
+  }
+}${6}</string>
+	<key>name</key>
+	<string>data.external</string>
+	<key>scope</key>
+	<string>source.terraform</string>
+	<key>tabTrigger</key>
+	<string>data.external</string>
+	<key>uuid</key>
+	<string>F5579FA1-BF8E-4612-A3C2-24B5E2F2A50B</string>
+</dict>
+</plist>

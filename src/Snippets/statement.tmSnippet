@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>statement {
+	sid = "$1"
+	actions = [
+		"$2",
+	]
+	resources = [
+		"$3"
+	]
+}</string>
+	<key>name</key>
+	<string>statement</string>
+	<key>scope</key>
+	<string>source.terraform meta.structure.resource.terraform</string>
+	<key>tabTrigger</key>
+	<string>statement</string>
+	<key>uuid</key>
+	<string>443EBD46-3B95-47F6-8926-11623BC0D32E</string>
+</dict>
+</plist>
