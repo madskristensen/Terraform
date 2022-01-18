@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terraform", "src\Terraform.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD8B2BAB-6C98-4E2B-95DB-A4BAC3DDBB0F}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yaml = .github\workflows\build.yaml
 		README.md = README.md
 		vs-publish.json = vs-publish.json
 	EndProjectSection
